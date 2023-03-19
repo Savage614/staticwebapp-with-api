@@ -1,0 +1,147 @@
+body {
+  background: url(../images/NewsBG.png) no-repeat left fixed;
+  opacity: 0.9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  width: 45em;
+  display: grid;
+  gap: 1em;
+  margin: 3em;
+  opacity: 1;
+ 
+}
+
+header{
+
+  background-color: rgb(10, 33, 109);
+  margin-left: -.5em;
+  width: 100%;
+  font-size: 4em;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight:bold;
+  color:rgb(200, 212, 226);
+  padding:.5em;
+  text-align:center;
+
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1em;
+}
+
+button {
+  background: rgb(10, 33, 109);
+  color: #fff;
+  font: inherit;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  padding: 0.5em 1.5em;
+}
+
+button:active {
+  background-color: #05b;
+}
+
+input {
+  border: 1px solid #999;
+  border-radius: 3px;
+  font: inherit;
+  padding: 0.5em;
+  outline: none;
+}
+
+input:focus {
+  outline: auto #17f;
+}
+
+h1{
+  background-image: linear-gradient(rgb(10, 33, 109), rgb(172, 187, 235));
+  border: 3px solid #999;
+  border-radius: 4px;
+  padding: .25em;
+  color:rgb(227, 233, 240);
+  width:97%;
+  
+}
+.item {
+  padding: 1em;
+  list-style-type: none;
+  border-radius: 6px;
+  margin-bottom: 1em;
+  background: #fff;
+  box-shadow: 0px 2px 6px 2px #0002;
+}
+
+.trendingList
+{
+  
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: .5em;
+  margin: auto;
+  background-image: linear-gradient(rgb(24, 36, 211), rgb(172, 187, 235));
+  gap: 5px 5px;
+}
+
+.trendingItem {
+  width:auto;
+  padding: .5em;
+  list-style-type: none;
+  background: #f1f2f5;
+  box-shadow: 0px 2px 6px 2px rgba(12, 23, 71, 0.133);
+}
+
+.trendingItem .title {
+  font-size: 100%;
+}
+.trendingItem .description {
+  margin: .5em .5em;
+}
+
+.trendingItem .thumbnail {
+  float: left;
+  box-shadow: 0px 1px 1px 1px rgba(235, 10, 10, 0.133);
+  border-radius: 12px;
+  margin-right: .5em;
+  margin-bottom: .25em;
+}
+
+.item .title {
+  font-size: 100%;
+}
+
+.item .description {
+  margin: 1em 0;
+}
+
+.item .thumbnail {
+  float: right;
+  box-shadow: 0px 1px 1px 1px #0002;
+  border-radius: 12px;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.item .meta {
+  font-size: 80%;
+  font-weight: bold;
+  color: #555;
+}
+
+.item .provider-thumbnail {
+  margin-right: 0.5em;
+}
+
+.item .meta > *:not(:last-child) {
+  margin-right: 2em;
+}
